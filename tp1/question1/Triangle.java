@@ -16,6 +16,15 @@ public class Triangle {
     private int yPosition;
     private String color;
     private boolean isVisible;
+    public Triangle(int height, int width, int xPosition, int yPosition, String color, boolean isVisible){
+        this.height=height;
+        this.width=width;
+        this.xPosition=xPosition;
+        this.yPosition= yPosition;
+        this.color=color;
+        this.isVisible=isVisible;
+        
+    }
 
     /**
      * Create a new triangle at default position with default color.

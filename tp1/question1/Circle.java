@@ -16,6 +16,14 @@ public class Circle {
     private int yPosition;
     private String color;
     private boolean isVisible;
+    public Circle(int diameter, int xPosition, int yPosition, String color,boolean isVisible){
+     
+        this.diameter= diameter;
+        this.xPosition = xPosition;
+        this.yPosition= yPosition;
+        this.color=color;
+        this.isVisible= isVisible;    
+    }
 
     /**
      * Create a new circle at default position with default color.

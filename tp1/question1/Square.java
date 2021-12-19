@@ -15,6 +15,16 @@ public class Square {
     private int yPosition;
     private String color;
     private boolean isVisible;
+    
+    public Square(int size, int xPosition, int yPosition, String color, boolean isVisible){
+    this.size=size;
+    this.xPosition=xPosition;
+    this.yPosition=yPosition;
+    this.color= color;
+    this.isVisible=isVisible;
+    }
+ 
+    
 
     /**
      * Create a new square at default position with default color.

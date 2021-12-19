@@ -20,6 +20,17 @@ public class Picture {
     private Square window;
     private Triangle roof;
     private Circle sun;
+    public Picture(Square wall, Square window, Triangle roof, Circle sun){
+this.wall=wall;
+this.window=window;
+this.roof=roof;
+this.sun=sun;
+}
+public void coucher(){
+         if(sun!=null){
+                      sun.slowMoveVertical(80); 
+                      }
+        
 
     /**
      * Constructor for objects of class Picture

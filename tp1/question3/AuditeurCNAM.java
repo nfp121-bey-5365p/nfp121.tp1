@@ -14,6 +14,17 @@ public class AuditeurCNAM {
     private String prenom;
     /** l'attribut matricule de chaque auditeur. */
     private String matricule;
+    public AuditeurCNAM(){
+        nom="khalifeh";
+        prenom="rawan";
+        matricule="RMK2000";
+    }
+    public AuditeurCNAM(String nom, String prenom, String matricule) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.matricule = matricule;
+    }
+    
 
     /**
      * "Création", le constructeur d'un auditeur avec son nom, son prénom et son
@@ -26,11 +37,7 @@ public class AuditeurCNAM {
      * @param matricule
      *            sur la carte d'inscription, près de la photo
      */
-    public AuditeurCNAM(String nom, String prenom, String matricule) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.matricule = matricule;
-    }
+  
 
     /**
      * le login au Cnam : 6 premières lettres du nom suivies de la première
@@ -45,7 +52,9 @@ public class AuditeurCNAM {
      *         homonymes...
      */
     public String login() {
-        return "";// à compléter
+         char s= prenom.charAt(0);
+        String str= nom.replaceAll("[#$*-@'']","_");
+        return nom.substring(0,6)+"_"+s;
     }
 
     /**
@@ -54,7 +63,7 @@ public class AuditeurCNAM {
      * @return son nom
      */
     public String nom() {
-        return null;// à compléter
+        return this.nom;
     }
 
     /**
@@ -63,7 +72,7 @@ public class AuditeurCNAM {
      * @return son prénom
      */
     public String prenom() {
-        return null;// à compléter
+        return this.prenom;
     }
 
     /**
@@ -72,7 +81,7 @@ public class AuditeurCNAM {
      * @return son matricule
      */
     public String matricule() {
-        return null;// à compléter
+        return this.matricule;
     }
 
     /**
